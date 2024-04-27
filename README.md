@@ -1,48 +1,88 @@
-# Getting Started with Create React App
+# Movie Review App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Movie Review App repository! This full-stack application is built using Java Spring Boot for the backend API and ReactJS for the frontend user interface. The backend utilizes MongoDB Atlas cloud as the database to store and manage movie data and user reviews.
 
-## Available Scripts
+## Demo:
+#### Desktop View
+![image](https://github.com/SiddheshKukade/Movie-review-full-stack-java-spring-boot-reactjs/assets/65951872/3c1a2734-880d-4bd1-8259-6c9933487fb3)
+#### Mobile View:
+Mobile Responsive
 
-In the project directory, you can run:
+![image](https://github.com/SiddheshKukade/Movie-review-full-stack-java-spring-boot-reactjs/assets/65951872/3150c436-62cf-44a7-9399-f056ab6e0ec8)
+#### Writing Reviews:
+![image](https://github.com/SiddheshKukade/Movie-review-full-stack-java-spring-boot-reactjs/assets/65951872/4d2264de-a891-4e51-a63a-5f11fb2acc59)
 
-### `npm start`
+### Watch Vides Fetched From Youtube and Write reviews:
+![image](https://github.com/SiddheshKukade/Movie-review-full-stack-java-spring-boot-reactjs/assets/65951872/4c687d94-913d-4e87-99be-3b1cb49fc497)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Top Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User Authentication**: Secure user authentication system to allow users to create accounts, log in, and manage their profiles.
+- **Browse Movies**: Users can explore a vast collection of movies with detailed information.
+- **Search Functionality**: A powerful search feature enables users to find movies based on titles, genres, actors, and more.
+- **Write Reviews**: Registered users can write and submit reviews for their favorite movies.
+- **Rating System**: Users can rate movies and view the average rating given by other users.
+- **Responsive UI**: The user interface is responsive and optimized for various devices, ensuring a seamless user experience.
 
-### `npm test`
+## Installation Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend (Java Spring Boot)
 
-### `npm run build`
+1. **Clone the repository:**
+ 
+git clone [https://github.com/Bharath-6/Movie-Review-Box.git](https://github.com/Bharath-6/Movie-Review-Box.git)
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navigate to the backend directory:**
+ ```
+cd movie-review-app/backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up MongoDB Atlas:**
+- Create an account on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- Create a new cluster and obtain the connection string.
 
-### `npm run eject`
+4. **Configure MongoDB Connection:**
+- Replace `<mongo_connection_string>` in `application.properties` with your MongoDB connection string.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Run the Spring Boot Application:**
+ ```
+./mvnw spring-boot:run
+ 
+```
+6. The backend server should now be running at `http://localhost:8080`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend (ReactJS)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Navigate to the frontend directory:**
+ ```
+cd frontend/movie-g-v1
+ ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies:**
+ ```
+npm install
+ ```
 
+3. **Set up environment variables:**
+- Create a `.env` file in the frontend directory.
+- Add the following line to the `.env` file and replace `<backend_api_url>` with the actual backend API URL (e.g., `http://localhost:8080`):
+ 
+REACT_APP_API_URL=<backend_api_url>
+ 
 
+4. **Run the React App:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm start
+ ```
 
-### `npm run build` fails to minify
+5. The React app should now be running at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+If you want to contribute to this project and make it better, your help is very welcome. Create a pull request with your proposed changes, and we will review it as soon as possible.
+
+Happy coding! 🚀
+@Bharath-6
